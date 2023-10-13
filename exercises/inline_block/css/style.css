@@ -1,0 +1,19 @@
+.inline {
+
+  background-color: gray;
+  display:flow-root
+}
+
+.inline p {
+  display : block;
+  border : 5px solid black;
+  margin : 40px;
+  padding: 40px  ;
+  background-color: pink;
+}
+.block p{
+  display : block;
+}
+.inline-block p {
+  display : inline-block;
+}
