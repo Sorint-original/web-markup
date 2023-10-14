@@ -184,7 +184,7 @@ main.homepage{
 }
 
 .entertain.image_collection img{
-    position: absolute;
+    position: relative;
     border: double 4px transparent;
     border-radius: 10px;
     background-origin: border-box;
@@ -274,7 +274,10 @@ footer p {
 }
 
 #Bison1{
-    width: 15%;
+    width: 30%;
     height: auto;
     background-image: linear-gradient(103deg,rgb(0,56,255),rgb(255,0,31)) ;
+    top: 1%;
+    left: 68%;
+
 }
