@@ -174,7 +174,7 @@ main.homepage{
     flex-wrap: wrap;
 }
 
-main.entertain picture{
+.entertain.image_collection{
     background-image: url('../images/Wierd_shape.png');
     aspect-ratio: 1/1.8755 ;
     width: 60%;
@@ -182,6 +182,14 @@ main.entertain picture{
     background-size: cover;
     z-index:5 ;
 }
+
+.entertain.image_collection img{
+    position: absolute;
+    border: double 4px transparent;
+    border-radius: 10px;
+    background-origin: border-box;
+}
+
 
 main.entertain .info{
     display: flex;
@@ -222,22 +230,6 @@ button {
     cursor: pointer;
 }
 
-#Ebutton {
-    background-image:  url('../images/entertainmentB.jpg') ;
-}
-
-#Fbutton {
-    background-image:  url('../images/foodB.jpg') ;
-}
-
-#Cbutton {
-    background-image:  url('../images/clothesB.jpg') ;
-}
-
-#Dbutton {
-    background-image:  url('../images/cleanersB.jpg') ;
-}
-
 a {
     text-decoration: none;
     color : rgb(0, 168, 243);
@@ -263,4 +255,26 @@ footer p {
     padding: 0;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+#Ebutton {
+    background-image:  url('../images/entertainmentB.jpg') ;
+}
+
+#Fbutton {
+    background-image:  url('../images/foodB.jpg') ;
+}
+
+#Cbutton {
+    background-image:  url('../images/clothesB.jpg') ;
+}
+
+#Dbutton {
+    background-image:  url('../images/cleanersB.jpg') ;
+}
+
+#Bison1{
+    width: 15%;
+    height: auto;
+    background-image: linear-gradient(103deg,rgb(0,56,255),rgb(255,0,31)) ;
 }
