@@ -59,7 +59,7 @@ p {
 
 address{
     font-family: "Inria Sans";
-    font-size: 1.5em; 
+    font-size: 1.5vw; 
     padding-left: 20%;
     padding-top: 50px;
 }
@@ -89,6 +89,10 @@ header{
 
 .site_header.entertain{
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(160,6,255,0.25))
+}
+
+.site_header.food{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(255,154,61,0.25))
 }
 
 .header_sections {
@@ -128,6 +132,10 @@ header{
     background-image: linear-gradient(to bottom ,rgb(209, 0, 243,0.25),rgba(164, 221, 248, 0.25))  ;
 }
 
+.page_title.food{
+    background-image: linear-gradient(to bottom ,rgb(255,154,61,0.25),rgba(164, 221, 248, 0.25))  ;
+}
+
 .page_title img {
     height: 100%;
     width: auto ;
@@ -150,6 +158,11 @@ header{
     top: 60%;
 }
 
+.page_title.food section{
+    -webkit-text-stroke-color: rgb(255,154,61) ;
+    top: 50%;
+}
+
 body {
     background-color: white;
 }
@@ -160,6 +173,10 @@ body.homepage{
 
 body.entertain{
     background-image: linear-gradient(to bottom,rgb(0, 168, 243,0.25),rgb(0, 168, 243,0.35),rgb(209, 0, 243,0.4),rgb(209, 0, 243,0.5))  ;
+}
+
+body.food{
+
 }
 
 main{
@@ -175,6 +192,7 @@ main.homepage{
 }
 
 .entertain.image_collection{
+    position: relative;
     background-image: url('../images/Wierd_shape.png');
     aspect-ratio: 1/1.8755 ;
     width: 60%;
@@ -184,7 +202,7 @@ main.homepage{
 }
 
 .entertain.image_collection img{
-    position: relative;
+    position: absolute;
     border: double 4px transparent;
     border-radius: 10px;
     background-origin: border-box;
@@ -210,6 +228,7 @@ main.entertain .info{
     text-align: left;
     padding-right: 0%;
     padding-bottom: 0%;
+    font-size: 1.5vw;
 }
 
 main.homepage a{
@@ -262,7 +281,7 @@ footer p {
 }
 
 #Fbutton {
-    background-image:  url('../images/foodB.jpg') ;
+    background-image:  url('../images/FoodB.jpg') ;
 }
 
 #Cbutton {
@@ -277,7 +296,58 @@ footer p {
     width: 30%;
     height: auto;
     background-image: linear-gradient(103deg,rgb(0,56,255),rgb(255,0,31)) ;
-    top: 1%;
-    left: 68%;
+    top: 5%;
+    left: 67%;
 
+}
+
+#Bison2{
+    width: 45%;
+    height: auto;
+    background-image: linear-gradient( to bottom left,rgb(0,102,255),rgb(44,228,205)) ;
+    top: 9%;
+    left: 18%
+}
+
+#Bison3{
+    width: 40%;
+    height: auto;
+    background-image: linear-gradient(to top right,rgb(51,133,255),rgb(154,1,208)) ;
+    top: 32%;
+    left: 57%;
+
+}
+
+#Bison4{
+    width: 44%;
+    height: auto;
+    background-image: linear-gradient(21deg,rgb(189,75,75),rgb(0,255,255)) ;
+    top: 28%;
+    left: 9%;
+
+}
+
+#Baja1{
+    width: 50%;
+    height: auto;
+    background-image: linear-gradient(to bottom left,rgb(0,168,243),rgb(255,0,168)) ;
+    top: 53%;
+    left: 47%;
+}
+
+#Baja2{
+    width: 32%;
+    height: auto;
+    background-image: linear-gradient(to bottom left,rgb(0,168,243),rgb(255,0,168)) ;
+    top: 51%;
+    left: 10%;
+}
+
+#Baja3{
+    aspect-ratio: 1.774/1;
+    width: 75%;
+    height: auto;
+    background-image: linear-gradient(145deg,rgb(112,47,251),rgb(248,88,253)) ;
+    top: 75%;
+    left: 20%;
 }
