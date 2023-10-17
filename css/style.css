@@ -278,7 +278,7 @@ main.homepage{
     font-size: 1.5vw;
 }
 
-main.homepage a{
+main.homepage form{
     aspect-ratio: 1/0.8;
     width:31.25%;
     height: auto;
@@ -288,6 +288,7 @@ main.homepage a{
 }
 
 button {
+
     width:100%;
     height: 100%;
     border-radius: 10px;
