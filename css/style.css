@@ -49,7 +49,7 @@ h5{
 
 p {
     font-family: "Inria Sans";
-    font-size: 1.5em; 
+    font-size: 1.5vw;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
@@ -65,9 +65,13 @@ address{
 }
 
 ul{
-    text-align: center;
+    font-family: "Inria Sans";
+    font-size: 2vw; 
+    text-align: left;
+    padding-left: 5%;
     list-style-type: disc;
     list-style-position:inside;
+    line-height: 4vw;
 }
 
 
@@ -124,11 +128,10 @@ header{
 .logo {
     height: 13vh;
 }
-
 .page_title{
-    
-    padding-top: 10vh;
     height: 90vh;
+    position: relative;
+    padding-top: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -159,6 +162,56 @@ header{
     border-left: 2px solid rgb(0, 168, 243);
     border-right: 2px solid rgb(0, 168, 243);
 }
+
+@media (max-width: calc(90vh*1.48)){
+    .page_title.homepage{
+        aspect-ratio: 1.48/1;
+        width:100%;
+        height: auto;
+    }
+    .page_title.homepage img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: calc(90vh*1.887)){
+    .page_title.entertain{
+        aspect-ratio: 1.887/1;
+        width:100%;
+        height: auto;
+    }
+    .page_title.entertain img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: calc(90vh*2)){
+    .page_title.food{
+        aspect-ratio: 2/1;
+        width:100%;
+        height: auto;
+    }
+    .page_title.food img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: calc(90vh*1.412)){
+    .page_title.clothes{
+        aspect-ratio: 1.412/1;
+        width:100%;
+        height: auto;
+    }
+    .page_title.clothes img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 .page_title section {
     position: absolute;
     left: 50%;
@@ -187,6 +240,7 @@ header{
 
 body {
     background-color: white;
+    min-height: 100vh;
 }
 
 body.homepage{
@@ -217,25 +271,41 @@ main.homepage{
     flex-wrap: wrap;
 }
 
-.entertain.image_collection{
+main.clothes  {
+    border-top: 4px solid rgb(0, 168, 243);
+}
+
+.image_collection{
     position: relative;
+    background-size: cover;
+}
+
+.entertain.image_collection{
     background-image: url('../images/Wierd_shape.png');
     aspect-ratio: 1/1.8755 ;
     width: 60%;
     height: auto;
-    background-size: cover;
     z-index:5 ;
 }
 
 .food.image_collection {
-    position: relative;
     background-image: url('../images/map_background.png');
     aspect-ratio: 1/1.975;
     width: 50%;
     height: auto;
-    background-size: cover;
     border:  4px solid rgb(255,199,0);
     
+}
+
+.clothes.image_collection{
+    width: 50%;
+    min-height: 100vw;
+    border-left: 4px solid rgb(0, 168, 243);
+    background-image: linear-gradient(to top ,rgba(255, 238, 5, 0.45),rgba(81, 255, 0, 0.3),rgba(0, 255, 242, 0.25),rgb(0, 168, 243,0.10));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .entertain.image_collection img{
@@ -250,6 +320,12 @@ main.homepage{
     border: 4px solid rgb(255,199,0);
     border-radius: 10px;
 }
+
+.clothes.image_collection img{
+    border: 4px solid rgb(187, 255, 0);
+    border-radius: 10px;
+}
+
 
 
 .entertain.info{
@@ -275,7 +351,6 @@ main.homepage{
     text-align: left;
     padding-right: 0%;
     padding-bottom: 0%;
-    font-size: 1.5vw;
 }
 
 main.homepage form{
@@ -440,4 +515,19 @@ footer p {
     height: auto;
     top: 68%;
     left: 10%;
+}
+
+#Clothes1 {
+    width: 50%;
+    height: auto;
+}
+
+#Clothes2 {
+    width: 60%;
+    height: auto;
+}
+
+#Clothes3 {
+    width: 75%;
+    height: auto;
 }
