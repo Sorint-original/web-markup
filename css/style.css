@@ -1,11 +1,12 @@
  *{
     margin: 0;
     padding: 0;
+    font-family: "Inria Sans";
  }
 
 
  h1{
-    font-family: "Inria Sans";
+
     font-size: 7vw ;
     text-align: center;
     letter-spacing: normal;
@@ -13,7 +14,7 @@
 }
 
 h2{
-    font-family: "Inria Sans";
+
     font-size: 2.5vw ;
     text-align: center;
     letter-spacing: normal;
@@ -21,7 +22,7 @@ h2{
 }
 
 h3 {
-    font-family: "Inria Sans";
+
     font-size: 2vw;
     padding-left: 20%;
     padding-top: 15px;
@@ -29,7 +30,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Inria Sans";
+
     font-size: 1.75vw;
     font-weight: normal;
     color: white;
@@ -41,34 +42,26 @@ h4 {
 }
 
 h5{
-    font-family: "Inria Sans";
+
     font-size: 1.5vw;
     font-weight: normal;
     padding-left: 1vw ;
 }
 
 p {
-    font-family: "Inria Sans";
+
     font-size: 1.5vw;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-address{
-    font-family: "Inria Sans";
-    font-size: 1.5vw; 
-    padding-left: 20%;
-    padding-top: 50px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
 
 ul{
-    font-family: "Inria Sans";
-    font-size: 2vw; 
+
+    font-size: 1.6vw; 
     text-align: left;
-    padding-left: 5%;
     list-style-type: disc;
     list-style-position:inside;
     line-height: 4vw;
@@ -112,6 +105,14 @@ header{
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 53, 243,0.25),rgb(0,225,224,0.25),rgb(0,255,102,0.25))
 }
 
+.site_header.cleaner{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgba(0, 174, 243, 0.25),rgba(0, 225, 112, 0.25),rgba(255, 238, 0, 0.25))
+}
+
+.site_header.contact {
+    background-image: linear-gradient(to right, rgb(125, 253, 114,0.4),rgb(0, 112, 243,0.4),rgb(125, 253, 114,0.4),rgb(125, 253, 114,0.5))
+}
+
 .header_sections {
     display: flex;
     justify-content: flex-start;
@@ -128,6 +129,7 @@ header{
 .logo {
     height: 13vh;
 }
+
 .page_title{
     height: 90vh;
     position: relative;
@@ -154,6 +156,10 @@ header{
 
 .page_title.clothes{
     background-image: linear-gradient(to bottom,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25))
+}
+
+.page_title.cleaner{
+    background-image: linear-gradient(to bottom,rgba(255, 238, 0, 0.4),rgba(0, 225, 112, 0.3),rgba(0, 174, 243, 0.25))
 }
 
 .page_title img {
@@ -211,6 +217,18 @@ header{
     }
 }
 
+@media (max-width: calc(90vh*1.67)){
+    .page_title.cleaner{
+        aspect-ratio: 1.67/1;
+        width:100%;
+        height: auto;
+    }
+    .page_title.cleaner img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 .page_title section {
     position: absolute;
@@ -238,6 +256,11 @@ header{
     top: 54%;
 }
 
+.page_title.cleaner section{
+    -webkit-text-stroke-color: rgb(255, 238, 0) ;
+    top: 50%;
+}
+
 body {
     background-color: white;
     min-height: 100vh;
@@ -259,6 +282,15 @@ body.clothes{
     background-image: linear-gradient(to top,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25))
 }
 
+body.cleaner{
+    background-image: linear-gradient(to top, rgba(255, 238, 0,0.4),rgb(0, 225, 112, 0.3),rgb(0,225,224,0.3),rgb(0, 174, 243, 0.3));
+}
+
+body.contact{
+    background-image: linear-gradient(320deg ,rgb(1,255,12,0.3),rgb(0,141,243,0.2),rgb(1,255,12,0.3)),linear-gradient( 184deg, rgb(28,243,50,0.3),rgb(66,0,255,0.2));
+    
+}
+
 main{
     display: flex;
     justify-content: space-between;
@@ -271,13 +303,15 @@ main.homepage{
     flex-wrap: wrap;
 }
 
-main.clothes  {
-    border-top: 4px solid rgb(0, 168, 243);
+main.clothes, main.cleaner  {
+    border-top: 3px solid rgb(0, 168, 243);
 }
 
 .image_collection{
     position: relative;
     background-size: cover;
+    min-height: 100vw;
+    width: 50%;
 }
 
 .entertain.image_collection{
@@ -291,17 +325,22 @@ main.clothes  {
 .food.image_collection {
     background-image: url('../images/map_background.png');
     aspect-ratio: 1/1.975;
-    width: 50%;
     height: auto;
     border:  4px solid rgb(255,199,0);
-    
 }
 
 .clothes.image_collection{
-    width: 50%;
-    min-height: 100vw;
     border-left: 4px solid rgb(0, 168, 243);
     background-image: linear-gradient(to top ,rgba(255, 238, 5, 0.45),rgba(81, 255, 0, 0.3),rgba(0, 255, 242, 0.25),rgb(0, 168, 243,0.10));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cleaner.image_collection{
+    border-left: 4px solid rgb(0, 168, 243);
+    background-image: linear-gradient(to top ,rgba(255,154,61, 0.4),rgba(255, 51, 0, 0.3),rgba(255, 0, 119, 0.25),rgba(0, 134, 243, 0.1));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -326,17 +365,29 @@ main.clothes  {
     border-radius: 10px;
 }
 
+.cleaner.image_collection img{
+    border: 4px solid rgb(255, 238, 0);
+    border-radius: 10px;
+}
 
-
-.entertain.info{
+.info{
+    width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.info p{
+    text-align: left;
+}
+
+.entertain.info{
     width: 40%;
 }
 
-.food.info{
-    width: 50%;
+.food.info p, .food.info h3, .food.info ul{
+    padding-left: 20%;
 }
+
 
 .venue{
     height: 50%;
@@ -352,6 +403,31 @@ main.clothes  {
     padding-right: 0%;
     padding-bottom: 0%;
 }
+
+.store_list{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 5vh;
+    
+}
+
+.store_details{
+    padding-left: 20%;
+}
+
+.store_details h2{
+    text-align: left;
+    padding-bottom: 1vw;
+}
+
+.store_details p {
+    padding: 0;
+    text-align: left;
+}
+
 
 main.homepage form{
     aspect-ratio: 1/0.8;
@@ -371,7 +447,7 @@ button {
     background-size: 100% 100%;
     cursor: pointer;
     color: white;
-    font-family: "Inria Sans";
+
     font-size: 2.5vw;
     -webkit-text-stroke-width: 0.06vw; 
     -webkit-text-stroke-color: rgb(0, 168, 243) ; 
@@ -531,3 +607,20 @@ footer p {
     width: 75%;
     height: auto;
 }
+
+#Clean1 {
+    width: 50%;
+    height: auto;
+}
+
+#Clean2 {
+    width: 60%;
+    height: auto;
+}
+
+#Clean3 {
+    width: 75%;
+    height: auto;
+}
+
+ 
