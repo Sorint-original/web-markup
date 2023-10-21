@@ -518,7 +518,7 @@ form{
 .personal_details section{
     width: 100%;
 }
-.personal_details input{
+.personal_details section input{
     width: 80%;
     aspect-ratio: 1/0.15;
     display:block;
