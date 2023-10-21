@@ -48,6 +48,10 @@ h5{
     padding-left: 1vw ;
 }
 
+label{
+    font-size: 1.5vw;
+}
+
 p {
 
     font-size: 1.5vw;
@@ -61,6 +65,7 @@ p {
 ul{
 
     font-size: 1.6vw; 
+    
     text-align: left;
     list-style-type: disc;
     list-style-position:inside;
@@ -288,7 +293,9 @@ body.cleaner{
 
 body.contact{
     background-image: linear-gradient(320deg ,rgb(1,255,12,0.3),rgb(0,141,243,0.2),rgb(1,255,12,0.3)),linear-gradient( 184deg, rgb(28,243,50,0.3),rgb(66,0,255,0.2));
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main{
@@ -472,7 +479,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 footer a{
@@ -487,6 +493,92 @@ footer p {
     padding: 0;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+
+form{
+    padding-top: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-grow: 1;
+    display:flex;
+
+}
+
+.personal_details{
+    width: 50%;
+    padding-top: 10%;
+}
+
+.comment{
+    width: 50%;
+    padding-top: 10%;
+}
+
+.personal_details section{
+    width: 100%;
+}
+.personal_details input{
+    width: 80%;
+    aspect-ratio: 1/0.15;
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255,0.5);
+    font-size: 1.5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+textarea{
+    width: 90%;
+    display:block;
+    aspect-ratio: 1.6/1;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255,0.5);
+    resize: none;
+    font-size: 1.5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.personal_details input[type = "radio"]{
+    height: 100%;
+    aspect-ratio: 1/1;
+    width:auto;
+}
+
+input[type="submit"]{
+    margin-top: 5%;
+    width: 35%;
+    aspect-ratio: 1/0.25;
+    height: auto;
+    border-radius: 39px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255,0.5);
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.gender_section{
+    display: flex;
+    height: 5%;
+    padding-bottom: 5%;
+}
+
+.text_section{
+    height: 10%;
+    padding-bottom: 10%;
+}
+
+.gender_section label{
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #Ebutton {
