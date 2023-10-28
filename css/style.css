@@ -551,6 +551,7 @@ textarea{
     height: 100%;
     aspect-ratio: 1/1;
     width:auto;
+    cursor: pointer;
 }
 
 input[type="submit"]{
@@ -579,6 +580,26 @@ input[type="submit"]{
 .gender_section label{
     padding-left: 2vw;
     padding-right: 2vw;
+}
+
+.submit_answer{
+    margin-top: 15vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5vh;
+    flex-grow: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 39px;
+    background-color: rgb(255, 255, 255,0.5);
+}
+
+.submit_answer p{
+    padding-left: 25vw;
+    padding-right: 25vw;
+    font-size: 2vw;
 }
 
 #Ebutton {
