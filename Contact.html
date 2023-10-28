@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="icon" type="image/x-icon" href="./images/Favicon.ico">
         <title>Harlem Expat</title>
+        <meta name="author" content="Sorin Petrescu">
     </head>
     <body class = "contact">
         <header class = "site_header contact">
@@ -23,7 +24,8 @@
         </header>
 
         <form action = "redirect.html" class = "contact">
-            <section class = "personal_details">
+            <fieldset class = "personal_details">
+                <legend>Personal details</legend>
                 <section class = "text_section">
                     <label for = "name">Name*:</label>
                     <input type="text" id="name" name = "name">
@@ -43,7 +45,7 @@
                     <label for = "phone">Phone number:</label>
                     <input type="tel" id="phone" name = "phone">
                 </section>
-            </section>
+            </fieldset>
             <section class="comment">
                 <label for="comment">write your message to the sites staff</label>
                 <textarea id="comment" name="comment"></textarea>

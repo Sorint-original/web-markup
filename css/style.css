@@ -52,20 +52,25 @@ label{
     font-size: 1.5vw;
 }
 
-p {
+legend{
+    font-size: 1.5vw;
+}
 
+p {
     font-size: 1.5vw;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 3vw;
     padding-bottom: 3vw;
+    letter-spacing: normal;
+    line-height: normal;
+    text-indent:0px;
+    word-spacing:0.25ch;
 }
 
 ul{
-
     font-size: 1.6vw; 
-    
     text-align: left;
     list-style-type: disc;
     list-style-position:inside;
@@ -90,32 +95,31 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    color:rgb(0, 168, 243) 
-    
+    color:rgb(0, 168, 243) ;
 }
 
 .site_header.homepage{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(0, 168, 243,0.15),rgb(28, 248, 40,0.25))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(0, 168, 243,0.15),rgb(28, 248, 40,0.25));
 }
 
 .site_header.entertain{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(160,6,255,0.25))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(160,6,255,0.25));
 }
 
 .site_header.food{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(255,154,61,0.25))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 168, 243,0.25),rgb(255,154,61,0.25));
 }
 
 .site_header.clothes{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 53, 243,0.25),rgb(0,225,224,0.25),rgb(0,255,102,0.25))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgb(0, 53, 243,0.25),rgb(0,225,224,0.25),rgb(0,255,102,0.25));
 }
 
 .site_header.cleaner{
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgba(0, 174, 243, 0.25),rgba(0, 225, 112, 0.25),rgba(255, 238, 0, 0.25))
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255,0.25),rgba(0, 174, 243, 0.25),rgba(0, 225, 112, 0.25),rgba(255, 238, 0, 0.25));
 }
 
 .site_header.contact {
-    background-image: linear-gradient(to right, rgb(125, 253, 114,0.4),rgb(0, 112, 243,0.4),rgb(125, 253, 114,0.4),rgb(125, 253, 114,0.5))
+    background-image: linear-gradient(to right, rgb(125, 253, 114,0.4),rgb(0, 112, 243,0.4),rgb(125, 253, 114,0.4),rgb(125, 253, 114,0.5));
 }
 
 .header_sections {
@@ -160,11 +164,11 @@ header{
 }
 
 .page_title.clothes{
-    background-image: linear-gradient(to bottom,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25))
+    background-image: linear-gradient(to bottom,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25));
 }
 
 .page_title.cleaner{
-    background-image: linear-gradient(to bottom,rgba(255, 238, 0, 0.4),rgba(0, 225, 112, 0.3),rgba(0, 174, 243, 0.25))
+    background-image: linear-gradient(to bottom,rgba(255, 238, 0, 0.4),rgba(0, 225, 112, 0.3),rgba(0, 174, 243, 0.25));
 }
 
 .page_title img {
@@ -284,7 +288,7 @@ body.food{
 }
 
 body.clothes{
-    background-image: linear-gradient(to top,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25))
+    background-image: linear-gradient(to top,rgb(0,255,102,0.4),rgb(0, 53, 243,0.35),rgb(0,225,224,0.3),rgb(0, 168, 243,0.25));
 }
 
 body.cleaner{
@@ -321,6 +325,13 @@ main.clothes, main.cleaner  {
     width: 50%;
 }
 
+figure{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+}
+
 .entertain.image_collection{
     background-image: url('../images/Wierd_shape.png');
     aspect-ratio: 1/1.8755 ;
@@ -333,7 +344,9 @@ main.clothes, main.cleaner  {
     background-image: url('../images/map_background.png');
     aspect-ratio: 1/1.975;
     height: auto;
-    border:  4px solid rgb(255,199,0);
+    border-width:  4px ;
+    border-color: rgb(255,199,0);
+    border-style: solid;
 }
 
 .clothes.image_collection{
@@ -363,17 +376,23 @@ main.clothes, main.cleaner  {
 
 .food.image_collection img{
     position: absolute;
-    border: 4px solid rgb(255,199,0);
+    border-width:  4px ;
+    border-color: rgb(255,199,0);
+    border-style: solid;
     border-radius: 10px;
 }
 
 .clothes.image_collection img{
-    border: 4px solid rgb(187, 255, 0);
+    border-width:  4px ;
+    border-color: rgb(187, 255, 0);
+    border-style: solid;
     border-radius: 10px;
 }
 
 .cleaner.image_collection img{
-    border: 4px solid rgb(255, 238, 0);
+    border-width:  4px ;
+    border-color: rgb(255, 238, 0);
+    border-style: solid;
     border-radius: 10px;
 }
 
@@ -390,7 +409,7 @@ main.clothes, main.cleaner  {
 .entertain.info{
     width: 40%;
 }
-
+/* ✓	Uses selecting elements by , (comma).  */
 .food.info p, .food.info h3, .food.info ul{
     padding-left: 20%;
 }
@@ -450,7 +469,9 @@ button {
     width:100%;
     height: 100%;
     border-radius: 10px;
-    border: 2px solid rgb(0, 168, 243) ;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 168, 243);
     background-size: 100% 100%;
     cursor: pointer;
     color: white;
@@ -468,6 +489,14 @@ a {
 
 .entertain.info a {
     color: rgb(0,38,195);
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+  
+a:active {
+    text-transform: uppercase;
 }
 
 .underline{
@@ -507,7 +536,15 @@ form.contact{
 
 .personal_details{
     width: 50%;
-    padding-top: 10%;
+    padding-top: 4%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0,0.5);
+    margin-top: 6vh;
+    margin-bottom: 12vh;
+    padding-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255,0.1);
 }
 
 .comment{
@@ -524,7 +561,9 @@ form.contact{
     display:block;
     height: auto;
     border-radius: 12px;
-    border: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     background-color: rgb(255, 255, 255,0.5);
     font-size: 1.5vw;
     padding-left: 5%;
@@ -537,7 +576,9 @@ textarea{
     aspect-ratio: 1.6/1;
     height: auto;
     border-radius: 12px;
-    border: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     background-color: rgb(255, 255, 255,0.5);
     resize: none;
     font-size: 1.5vw;
@@ -548,10 +589,11 @@ textarea{
 }
 
 .personal_details input[type = "radio"]{
-    height: 100%;
     aspect-ratio: 1/1;
-    width:auto;
+    width:6%;
+    height: auto;
     cursor: pointer;
+    
 }
 
 input[type="submit"]{
@@ -560,7 +602,9 @@ input[type="submit"]{
     aspect-ratio: 1/0.25;
     height: auto;
     border-radius: 39px;
-    border: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     background-color: rgb(255, 255, 255,0.5);
     font-size: 2vw;
     cursor: pointer;
@@ -591,7 +635,9 @@ input[type="submit"]{
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     border-radius: 39px;
     background-color: rgb(255, 255, 255,0.5);
 }
