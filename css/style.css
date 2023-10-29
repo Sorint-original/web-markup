@@ -409,6 +409,7 @@ figure{
 .entertain.info{
     width: 40%;
 }
+
 /* ✓	Uses selecting elements by , (comma).  */
 .food.info p, .food.info h3, .food.info ul{
     padding-left: 20%;
@@ -508,14 +509,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 footer a{
     color: black;
-}
-
-.homepage footer{
-    margin-top: 50px;
 }
 
 footer p {
@@ -782,4 +780,7 @@ input[type="submit"]{
     height: auto;
 }
 
- 
+#Cookies{
+    position: absolute;
+    z-index: 9999;
+}
