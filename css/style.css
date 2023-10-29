@@ -643,8 +643,9 @@ input[type="submit"]{
 .submit_answer p{
     padding-left: 25vw;
     padding-right: 25vw;
-    font-size: 2vw;
+    font-size: 2em;
 }
+
 
 #Ebutton {
     background-image:  url('../images/entertainmentB.jpg') ;
