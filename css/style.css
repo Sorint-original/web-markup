@@ -781,7 +781,7 @@ input[type="submit"]{
 }
 
 
-/* the cookie message is the footer in the homepage and detail pages */
+/* the cookie message is in the footer */
 #Cookies{
     position: absolute;
     z-index: 9999;
